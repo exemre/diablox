@@ -1,0 +1,64 @@
+Roblox Oyun Geliştirme Prensipleri ve Standartları
+1. Entegrasyon ve Uyumluluk
+Geliştirilecek her modül, mevcut sistemle tam uyumlu olmalı ve diğer bileşenlerle sorunsuz entegrasyon sağlamalıdır. Kullanılan olay dinleyicileri, veri yöneticileri ve güvenlik modülleriyle çakışmalar önlenmelidir.
+2. Profesyonel ve İleri Seviye Lua Kullanımı
+Kod, modern Lua sözdizimi ve en iyi uygulamalar doğrultusunda yazılmalı; Metatable, OOP, Modüler Programlama gibi ileri seviye tekniklerden faydalanılmalıdır.
+3. DRY (Don't Repeat Yourself) Prensibi
+Tekrarlanan kodlardan kaçınılmalı, modüler ve yeniden kullanılabilir fonksiyonlar oluşturulmalıdır. Aynı işlevi birden fazla kez yazmaktan kaçınılmalıdır.
+4. Sağlam Veri Akışı ve Olay Yönetimi
+Scriptler arasında veri akışı ve olay tetikleme mekanizmaları açık, tutarlı ve hatasız şekilde kurgulanmalıdır. RemoteEvents ve RemoteFunctions etkin şekilde kullanılmalı, senkronizasyon iyi yönetilmelidir.
+5. Doğru Çalışma Mantığı ve Hata Yönetimi
+Çalışma mantığındaki hatalar minimize edilmelidir.
+Hata yakalama (try-catch) mekanizmaları kullanılmalıdır.
+Test süreçleri titizlikle yürütülmelidir.
+Debugging ve Logging mekanizmaları ile hata ayıklama kolaylaştırılmalıdır.
+6. Güvenlik ve AntiManipulation
+Yetkisiz erişim ve veri manipülasyonlarını önlemek için güvenlik önlemleri uygulanmalıdır.
+Exploit/hack koruması için istemci tarafında hassas veriler saklanmamalıdır.
+Tüm kritik işlemler server-side doğrulamalar ile korunmalıdır.
+7. İşlevsellik ve Kullanıcı Deneyimi
+Kod, belirlenen işlevleri eksiksiz ve hatasız yerine getirmelidir. Oyuncu deneyimi açısından akıcı, sezgisel ve optimize edilmiş bir yapı sağlanmalıdır.
+8. Temiz, Anlaşılır ve Yorumlanabilir Kod
+Kod düzenli, okunabilir ve yeterli yorumlarla desteklenmelidir. Gelecekte yapılacak geliştirmeler için bakım kolaylaştırılmalıdır. Kod açıklamaları, takım içi işbirliğini artıracak şekilde eklenmelidir.
+9. Performans ve Optimizasyon
+Gereksiz hesaplamalardan kaçınılmalıdır.
+Hafıza ve CPU kullanımı optimize edilmelidir.
+Döngüler ve zamanlayıcılar verimli şekilde yönetilmelidir.
+Unnecessary loops, gereksiz wait() kullanımı gibi performans sorunları önlenmelidir.
+10. Stabilite ve Test Süreçleri
+Kod, düzenli birim testleri ve entegrasyon testleri ile doğrulanmalıdır.
+Otomatik hata raporlama mekanizmaları aktif olmalıdır.
+Oyun içi playtest aşamaları düzenli olarak uygulanmalıdır.
+11. Merkezi Kontrol ve Denetim Mekanizmaları
+Kodun sürdürülebilirliğini artırmak için merkezi bir yapı oluşturulmalı, yeni modüller entegre edilirken denetim sağlanmalıdır. Gelecekteki sistemlerle uyumu kolaylaştırmak için merkezi kontrol yapıları oluşturulmalıdır.
+12. Esnek Entegrasyon Stratejileri
+Yeni kodlar, mevcut sistemle çakışmayacak şekilde entegre edilmelidir.
+Modüller, gelecekte genişletilebilir yapıda tasarlanmalıdır.
+Harici API veya veri yönetimi kullanımı entegre edilmeden önce iyi planlanmalıdır.
+13. Pratik ve Uygulanabilir Çözümler
+Geliştirilen çözümler gerçek oyun senaryolarına uygun, pratik ve kolay uygulanabilir olmalıdır. Gereksiz karmaşıklıklardan kaçınılmalıdır.
+14. Algoritma ve Mantık Optimizasyonu
+Daha verimli algoritmalar kullanılmalıdır.
+Gereksiz hesaplamalar minimize edilmelidir.
+Veri yapıları (diziler, hash tablolar, önbellekleme yöntemleri) etkin kullanılmalıdır.
+15. Veri Yönetimi ve Senkronizasyon
+Verilerin tutarlılığı sağlanmalı ve senkronizasyon mekanizmaları uygulanmalıdır.
+DataStore kullanımı proje gereksinimlerine göre değerlendirilmeli ve gerektiğinde optimize edilmelidir.
+Cache mekanizmaları kullanılarak performans artırılmalıdır.
+16. Hafif ve Optimize Kod
+Kod gereksiz yüklerden arındırılarak, hafif ve optimize şekilde yazılmalıdır. Animasyon havuzu (Animation Pooling) ve çarpışma tespit yönetimi gibi optimizasyon teknikleri uygulanmalıdır.
+17. Dokümantasyon ve Kod Standartları
+Kodun her aşaması için açıklayıcı dokümantasyon hazırlanmalı ve yorumlar eklenmelidir. Takım çalışması ve bakım süreçleri kolaylaştırılmalıdır. Kod yazım standartları belirlenmeli ve tüm ekibin buna uyması sağlanmalıdır.
+18. Test Driven Development (TDD) ve Otomatik Testler
+Birim testler ve entegrasyon testleri yazılmalıdır.
+Otomatik test sistemleriyle hata riski minimize edilmelidir.
+AI, fizik motoru ve kullanıcı arayüzü testleri düzenli olarak yapılmalıdır.
+19. Versiyon Kontrol ve İşbirliği
+Takım içi uyum ve izlenebilirlik için Git veya Roblox Version Control gibi sistemler kullanılmalıdır.
+Kodlama standartlarına ve revizyon geçmişine uyum sağlanmalıdır.
+Düzenli yedekleme ve sürüm yönetimi yapılmalıdır.
+
+📌 Bu Prensiplere Neden Uymalıyız?
+✅ Daha verimli geliştirme süreçleri ✅ Kodun okunabilirliğini ve sürdürülebilirliğini artırma ✅ Performans ve güvenlik açısından sağlam bir yapı oluşturma ✅ Takım içinde uyumlu çalışma ortamı sağlama
+Bu doküman, geliştirme süreçlerinde standartları korumak ve proje kalitesini artırmak için ana referans olarak kullanılacaktır. 🚀
+
